@@ -27,3 +27,6 @@ Thumbs.db
 
 # Sessions/browser data
 sessions/
+
+# Exclude external AI frameworks
+execution/hermes-agent/
