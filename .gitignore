@@ -15,6 +15,7 @@ token.json
 # Temp/intermediate files
 .tmp/
 *.log
+DOWNLOADS/
 
 # OS
 .DS_Store
