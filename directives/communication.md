@@ -20,4 +20,10 @@ At the end of every response, provide a brief **"Summary"** section that recaps 
 - 🔜 Next step when ready
 ```
 
-This applies to every turn, no exceptions.
+## Subagent / Browser Visuals
+
+**NEVER** embed screenshots, `.webp` recordings, or images of the browser subagent in the chat interface. 
+
+The user has a split-screen setup and can physically see the browser operating on the left half of the monitor. Embedding recordings clutters the chat and is completely unnecessary. Execute the browser commands silently and just report what was found or completed.
+
+---
