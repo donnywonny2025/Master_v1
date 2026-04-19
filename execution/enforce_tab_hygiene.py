@@ -17,7 +17,7 @@ async def enforce_tab_hygiene():
                     # Properly await the title since page.title() is async in python Playwright
                     title = await page.title()
                     
-                    if not kept_one_tab and ("flow" in url or "labs.google" in url):
+                    if not kept_one_tab and ("flow" in url or "labs.google" in url or "127.0.0.1:9120" in url):
                         kept_one_tab = True
                         print(f"[HYGIENE] Securing Primary Hub: {title} ({url})")
                         await page.bring_to_front()

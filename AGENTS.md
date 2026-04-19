@@ -65,3 +65,25 @@ Errors are learning opportunities. When something breaks:
 You sit between human intent (directives) and deterministic execution (Python scripts). Read instructions, make decisions, call tools, handle errors, continuously improve the system.
 
 Be pragmatic. Be reliable. Self-anneal.
+
+## Visual Ground Truth (`look.sh`)
+
+Before and after any workspace, browser, or UI change, run:
+```bash
+cd "/Volumes/WORK 2TB/WORK 2026/MASTER V1" && bash execution/look.sh "description"
+```
+Then view the screenshot to verify what actually happened. **Never assume — always look.** Screenshots are ground truth. Metadata can lag or lie. The look command captures the main monitor exactly as the user sees it.
+
+### Mandatory Look Triggers
+- After any browser tab operation (open, close, navigate)
+- After any visual change (terminal launch, UI update, process start)
+- When the user says something "looks wrong"
+- Before reporting completion of any visual task
+
+### Workspace Awareness
+- Chrome must have **exactly 1 tab** at all times (the Hermes Web Terminal)
+- Never use `open -a "Google Chrome"` when a tab already exists
+- **HEADLESS EXECUTION PROHIBITION:** NEVER run `hermes chat` or query Hermes via invisible background terminal commands (`run_command`) when demonstrating interactions to the user. Background commands bypass the visual UI and spin up hidden compiler instances that trigger massive cache-generation spam on the System Activity Feed file-watcher.
+- **MANDATORY INJECTION:** You MUST use WebSocket injection (`python3 execution/direct_inject.py "your command"`) for ALL Hermes communication. This ensures the query is typed directly into the visible Terminal Dashboard so the user sees the execution happen in real time.
+- **OUTBOUND TRANSCRIPT READING:** When you inject a command and need to read Hermes' response, DO NOT use `look.sh` to read the screen. Instead, read `~/.hermes/logs/outbound_transcripts.log`. Hermes automatically mirrors all of its outbound textual responses to this log file.
+- After cleanup ops, always re-run `look.sh` to confirm visually
