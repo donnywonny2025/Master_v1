@@ -35,7 +35,9 @@ def main():
         api_key = os.getenv("OPENROUTER_API_KEY")
         
         if not api_key:
-            api_key = "REDACTED_USE_ENV_VAR" # Fallback mapped specifically for user
+            console.print("[bold red]Error:[/bold red] OPENROUTER_API_KEY not found in environment.")
+            console.print("Set it in execution/hermes-agent/.env or export it.")
+            sys.exit(1)
 
         headers = {
             "Authorization": f"Bearer {api_key}",

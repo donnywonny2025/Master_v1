@@ -1,0 +1,226 @@
+12843     
+Return-path: <>
+Original-recipient: rfc822;colour8k@mac.com
+Received: from ci74p00im-qukt09080701.me.com by p118-mailgateway-smtp-596b6575bf-pr5ds (mailgateway 2421B41)
+	with SMTP id 2ab9a360-9157-4062-a121-55172cb61c7b 
+	for <colour8k@mac.com>; Thu, 18 Jul 2024 17:50:23 GMT
+X-Apple-MoveToFolder: INBOX 
+X-Apple-Action: MOVE_TO_FOLDER/INBOX
+X-Apple-UUID: 2ab9a360-9157-4062-a121-55172cb61c7b
+Received: from us-smtp-delivery-222.mimecast.com (us-smtp-delivery-222.mimecast.com [170.10.129.222])
+	by ci74p00im-qukt09080701.me.com (Postfix) with ESMTPS id DA60C39001AB
+	for <colour8k@mac.com>; Thu, 18 Jul 2024 17:50:19 +0000 (UTC)
+X-ICL-Info: GAtbRFYCBVFFSlVHSwQEQgYMWxkXXlNCBhAWSkkHBkxESUhGSgkYUEdLRhIcDUMMHhcJABYQUAZIDQMaCFUYBRoPRgUbDVUNGRYTBUBbdg8UGkgUF10WChAVCUoNQxsRGA0WWhxVWgsDHBQOVQIEUFsUDxodU1cRAVcFGBUQRhYHRBMEVUNbFgVUAhIUWUAHBwBLRUoCGA8cFAMUGUNCTBYWC1ccVAsWEBQWElZXWRRVFA8TRQwDVkUYB0YbCFAETUFSFkgFDwBBTFdHTFQHAUUaAxZJCXYgLEo2JUgJeyBCT1dAVl5XDwULAkdBHkYQGh1IGA1EWg0aEkgUF10I
+X-ICL-Score: 3.2330330342
+Authentication-Results: bimi.icloud.com; bimi=none
+X-ARC-Info: policy=fail; arc=none
+Authentication-Results: arc.icloud.com; arc=none
+Authentication-Results: dmarc.icloud.com; dmarc=pass header.from=tempe.gov
+X-DMARC-Info: pass=pass; dmarc-policy=reject; s=r0; d=r1; pdomain=tempe.gov
+X-DMARC-Policy: v=DMARC1; p=reject; rua=mailto:b3648ca8787e083@rep.dmarcanalyzer.com; ruf=mailto:b3648ca8787e083@for.dmarcanalyzer.com; fo=1;
+Authentication-Results: dkim-verifier.icloud.com;
+	dkim=pass (2048-bit key) header.d=tempe.gov header.i=@tempe.gov header.b=CnyksRFk
+Authentication-Results: spf.icloud.com; spf=none (spf.icloud.com: mailer_daemon@us-smtp-delivery-222.mimecast.com does not designate permitted sender hosts) smtp.mailfrom=
+Received-SPF: none (spf.icloud.com: mailer_daemon@us-smtp-delivery-222.mimecast.com does not designate permitted sender hosts) receiver=spf.icloud.com; client-ip=170.10.129.222; helo=us-smtp-delivery-222.mimecast.com; envelope-from=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=tempe.gov;
+	s=mimecast20230623; t=1721325017;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 in-reply-to:in-reply-to:references:references;
+	bh=xcjh/Nd+Itxvzk5Haw8dFKhmK4J0Ya0JxLoF0Aggh5c=;
+	b=CnyksRFkfW1lsHMbHuFNIVXzXycIba6dxcB2HYTanevUDV1+8FSziPELmD1S+uIU8s1rlk
+	M4OwAusUNfHQQgNF8jOgaeQBGfdYKrCSwzkk4WA7ybVCGNMu99LD1hnTW0hyXDfS8eGd/+
+	EEJ2SoyxfXC6czzMA3pJTgWcx8GbY8TDoHNcX49JGkAVIS12CijVu3Gca+R3+2Y4j7Y6YP
+	wVPZSN0M7yeUAldYa3+L6KMS7KMfxEsohQvzo8Uzqc4gihem6J+ueetHpKaCzrlrVsDu78
+	zejP/rCrFADfU0k9S/oFj79iQbZvSSye0s5VuplzBES883KOI8lAZ73tLJ7Oeg==
+Received: from BY5PR09CU001.outbound.protection.outlook.com
+ (mail-westusazlp17011008.outbound.protection.outlook.com [40.93.1.8]) by
+ relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ us-mta-155-20IC2Y8VM96WYB0oQrlEsA-1; Thu, 18 Jul 2024 13:50:15 -0400
+X-MC-Unique: 20IC2Y8VM96WYB0oQrlEsA-1
+Received: from BY3PR09MB7617.namprd09.prod.outlook.com (2603:10b6:a03:352::13)
+ by PH0PR09MB10814.namprd09.prod.outlook.com (2603:10b6:510:2a8::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7784.18; Thu, 18 Jul
+ 2024 17:50:12 +0000
+Received: from BY3PR09MB7617.namprd09.prod.outlook.com ([::1]) by
+ BY3PR09MB7617.namprd09.prod.outlook.com ([fe80::d8d6:bf1f:a57e:4d0e%7]) with
+ Microsoft SMTP Server id 15.20.7762.032; Thu, 18 Jul 2024 17:50:12 +0000
+From: Court-Web <Court-Web@tempe.gov>
+To: Jeff Kerr <colour8k@mac.com>
+Subject: Automatic reply: Case #23-024422-3
+Thread-Topic: Case #23-024422-3
+Thread-Index: AQHa2TrvMdE96+BmOU+PTktfiDo27LH8w2qp
+Date: Thu, 18 Jul 2024 17:50:12 +0000
+Message-ID: <540aa1c8ff884a059b45104d1c0cea19@BY3PR09MB7617.namprd09.prod.outlook.com>
+References: <C859204E-D7B1-492A-818B-DD6BED118199@mac.com>
+In-Reply-To: <C859204E-D7B1-492A-818B-DD6BED118199@mac.com>
+X-MS-Has-Attach: 
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: court-web@tempe.gov
+X-MS-TNEF-Correlator: 
+x-ms-exchange-parent-message-id: <C859204E-D7B1-492A-818B-DD6BED118199@mac.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: BY3PR09MB7617:EE_|PH0PR09MB10814:EE_
+x-ms-office365-filtering-correlation-id: ddc92c0c-5f52-44fa-d5a6-08dca7521299
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;ARA:13230040|50650200027|366016|41320700013|1800799024|80100003
+x-microsoft-antispam-message-info: =?Windows-1252?Q?XhNkt2v8egsyu713PpRaA10WU+S1AUs6P6zuUodnEanv7jxV3qXiicw6?=
+ =?Windows-1252?Q?/REiLcyhto6ZcG0vmhbVfecpfEqUGnuJnxhXgpTx9F/+BScWJBSdnvma?=
+ =?Windows-1252?Q?QR/i677dkgoz0OkZX+Loopw2CAhZmegV+I5IWccNiZs57qJGv7IORVyx?=
+ =?Windows-1252?Q?2v/R/8DliZSSnWoCPilSHsZML3yCeGJa4CXWObUeziBoI5Zr8XylMlZw?=
+ =?Windows-1252?Q?FXCKaLTgpOJmjFRSDGgi4Q+37LxWpQ1hIe5S6SjCB8Ojqqop3fea9qrw?=
+ =?Windows-1252?Q?Pp1QO1kiUJIdJMvOjpfVD6IW1e6tBUxMQHqT3rMTRkDSnTNP7BPTD0ob?=
+ =?Windows-1252?Q?uAI8fep48PFUpVHNsyt86g63H1EO6DwN9pPj8g97+xXwymy+99+pirRt?=
+ =?Windows-1252?Q?CvW+hVx/xg1/L1TpFPHWoMGuqgyF+lJjS9AF18xQX/O8gB3rW9ccsv+t?=
+ =?Windows-1252?Q?4y48mjP7wAjbL/WYyVKWUid1pSSxY4jgjYgLbis6KXbmUlP7MAtwh+qK?=
+ =?Windows-1252?Q?WkaeZrNmnQSVnscoBUNnVB+2QtYhEslj1PACLQ6z7O9gPvR9pyAGZzxw?=
+ =?Windows-1252?Q?K+C2lPdSEraJWhLzXHbBXL8f/X1hjeU63YiSsQ2rtjJbReC5DybmuBZA?=
+ =?Windows-1252?Q?iM6PqlwiqxhPXhTaDcybuY5ffI6NmDY8ylQMu7bogd47nz4T3FRojzhr?=
+ =?Windows-1252?Q?69Mmf70xflFXHYirNpOmWTTTJ1me+/4cTNaUTIVz9Iy1KJVss31IXe6o?=
+ =?Windows-1252?Q?9fPXAk8oOiCpH0ooWZYjLUOT4tx7/GqJtsgkWgNiTth3+ZHyW0fbXdoD?=
+ =?Windows-1252?Q?9YGwtLurnRS6quCtK6jYE8Am1ch/goUcccogcBrkpXUfb5fZjF8lWLf5?=
+ =?Windows-1252?Q?PLlBCOiSlMUA5M5LWBTcrGf/ZUq84jb3Y5LSRCEi0pt9va8hqSE1jUjb?=
+ =?Windows-1252?Q?LQskSVB9NpNFYGTXwsvgzY/ZLJyTKc8bP7YlZYIx2jM4EGZJxBoGhb+s?=
+ =?Windows-1252?Q?PTPkkRKEo0BMD/w8p6P5dEH4VtsHFzfbLyResfiMkUiYixbcbgXaMyxu?=
+ =?Windows-1252?Q?60StSlDsTMb2NImlzhqzsoVlehDo6maZmzvtwemNMm7Fb8T9wetgIHlp?=
+ =?Windows-1252?Q?T8basHuLS2S80z8PgvYPp6bpdUlvLqlk6AaXglQKo8xyNJwf/9J1nM5i?=
+ =?Windows-1252?Q?tejbbtBOV77/a+V2w6l3SVJc8AjaV6UYK2ffD1Smt/jP09dCLlOHnGB7?=
+ =?Windows-1252?Q?V5z2AlsC4Tlze4lsPdnRQqj+e7LHq/Tbj44dxoSkHS+40eeUaA39zqc8?=
+ =?Windows-1252?Q?4HSzAY8NLoxPk12elSqtvRgQDRGxwgzv4fRHlCAOYNTOSrm8XZvpCNoK?=
+ =?Windows-1252?Q?YZEk19S7OWiAxapEQnGD4aoVPsF0c9/ksOE=3D?=
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BY3PR09MB7617.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(50650200027)(366016)(41320700013)(1800799024)(80100003);DIR:OUT;SFP:1501
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 8zZ/Cn9WUdQ87/S76wVl9spg2uLY3SkS/ef5aWLpTSNgX6gYveKARMpQLM56iotEG71eqwwaWW5Ooxs1e9WWvnuzk7zqQQ9ux+/t1Sm7t0sH9fKk6166gQVVI7KAa4R34VBefROMtrzz9s1FWjN0sgFo4jPIJyUM5Wp2UHLQSY1frQgUZf6ef5f/dvokwDqagxv6hQzJKqzfDVbNsxiXleXElq+5vzDt+U0Y35x9A9ZM2O4eOev4D5e2A7qDfHS2hvNDnno9tKAhce16udVlvYjpObL4WAs3cKyDbs6rxL8xP/qefKog6xO2OqnhM7qN
+MIME-Version: 1.0
+X-OriginatorOrg: tempe.gov
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BY3PR09MB7617.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: ddc92c0c-5f52-44fa-d5a6-08dca7521299
+X-MS-Exchange-CrossTenant-originalarrivaltime: 18 Jul 2024 17:50:12.0593
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 727d541c-0af1-45f6-abf3-34c2cf4483fe
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR09MB10814
+X-Mimecast-Spam-Score: 0
+X-Mimecast-Originator: tempe.gov
+Content-Type: multipart/alternative;
+	boundary="_000_540aa1c8ff884a059b45104d1c0cea19BY3PR09MB7617namprd09pr_"
+X-CLX-Shades: Grey
+X-MANTSH: 1TFkXBxsYEQpZRBdmSRpBe3xGWAVfAREKWU0XbVhPUxEKWUkXGnEaEBp3BgcZGHE
+ ZHBAdE3cGGBoGGhEKWV4XbGx5EQpDThd/e1pOXBxfGkMYWV1SeWFEfUBHXW97bXxyeWAceRJkT
+ hEKWFwXGQQaBB8aBRsaBBMEGwQdHhAbHhofGhEKXlkXTlBcWhkRCk1cFxgbGREKTFoXaGxsTWs
+ RCkxGF29ra2NiTWsRCkNaFxsdGgQbGgQbGBMEGBgYEQpCXhcbEQpCXBcbEQpeThcbEQpCSxdmQ
+ lhJfkNtGhx9bREKQkkXZkJYSX5DbRocfW0RCkJFF2BFSUAbXXtNEnhkEQpCThdmQlhJfkNtGhx
+ 9bREKQkwXen1rRmdTfnNSeQERCkJsF2N9cGFLXEsYGn5fEQpCQBdpGEd+WhhJe29hQBEKQlgXb
+ XhSWExmQAFcZEcRCkJ4F2t6SX0eRmJjR2QcEQpNXhcHGxEKcGgXYGZZG1p/Z3NiGHwQGhEKcGg
+ XZn1kU2xyTGFLBWEQBx8fEQpwaBdkY05pTlheT1pcARAHGRoRCnBoF2NgaHNTE2l7HGBtEAcZG
+ hEKcGgXZGhHGWBLZVAaWXoQBxkaEQpwaBdlQRtYH2l5G1hLQhAHGRoRCnBoF2tbR2JCQ31fHBh
+ pEAcZGhEKcH8XaGBgZmVNbEJBT20QGhEKcF8Xb2BQTmdaGHNaaV4QBxkaEQpwfRdvYFBOZ1oYc
+ 1ppXhAHGRoRCnB9F29gUE5nWhhzWmleEAcZGhEKcGwXa21QW2hhT3xrZk8QBxkaEQpwTBdgb0E
+ fREYdcGhlbhAHGRoRCnBDF2tNaHJ5TXkcH3h4EAcdBBMRCm1+FwcbEQpYTRdLEQ==
+X-Proofpoint-GUID: UQpdv6u0i2swxSKnWjmwEQGVXSJ6S8Nd
+X-Proofpoint-ORIG-GUID: UQpdv6u0i2swxSKnWjmwEQGVXSJ6S8Nd
+
+--_000_540aa1c8ff884a059b45104d1c0cea19BY3PR09MB7617namprd09pr_
+Content-Type: text/plain; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+
+
+Thank you for the email correspondence. A response will be available within=
+ three to five business days.  If you don=92t see the response in your inbo=
+x, please be sure to check your spam or junk folder. For immediate assistan=
+ce, please call the Criminal Division at 480-350-8270 or the Civil Division=
+ at 480-350-8184.
+
+To check case status please visit www.tempe.gov/court<http://www.tempe.gov/=
+court>
+
+Tempe Municipal Court
+
+*** This is an automated response; please do not reply to this email. ***
+
+--_000_540aa1c8ff884a059b45104d1c0cea19BY3PR09MB7617namprd09pr_
+Content-Type: text/html; charset=WINDOWS-1252
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+</head>
+<body>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)">
+<br>
+</div>
+<div></div>
+<div></div>
+<div style=3D"font-size:13px; font-family:Tahoma">
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3"><font face=3D"Calibri"><font style=3D"color:rgb(0,0,0)"=
+><span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-s=
+ize:14pt">Thank you for the email correspondence.&nbsp;A response
+ will be available within three to five business days.&nbsp; </span><span s=
+tyle=3D"font-size:14pt; font-family:&quot;Times New Roman&quot;,Times,serif=
+">If you don=92t see the response in your inbox, please be sure to check yo=
+ur spam or junk folder.
+</span><span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; =
+font-size:14pt">For immediate assistance, please call the Criminal Division=
+ at 480-350-8270 or the Civil Division at 480-350-8184.&nbsp;</span></font>=
+</font></font></span></p>
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3" face=3D"Calibri" style=3D"color:rgb(0,0,0)"><span style=
+=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-size:14pt">&n=
+bsp;</span></font></span></p>
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3" face=3D"Calibri" style=3D"color:rgb(0,0,0)"><span style=
+=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-size:14pt">To=
+ check case status please visit
+</span></font><a href=3D"http://www.tempe.gov/court"><span style=3D"color:r=
+ed"><font size=3D"3" face=3D"Calibri" style=3D"color:rgb(0,0,0)"><span styl=
+e=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-size:14pt">w=
+ww.tempe.gov/court</span></font></span></a></span></p>
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3" face=3D"Calibri" style=3D"color:rgb(0,0,0)"><span style=
+=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-size:14pt">&n=
+bsp;</span></font></span></p>
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3"><font face=3D"Calibri"><font style=3D"color:rgb(0,0,0)"=
+><span style=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-s=
+ize:14pt">Tempe Municipal Court</span></font></font></font></span></p>
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3" face=3D"Calibri" style=3D"color:rgb(0,0,0)"><span style=
+=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-size:14pt">&n=
+bsp;</span></font></span></p>
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0pt"><span style=3D"color:re=
+d"><font size=3D"3" face=3D"Calibri" style=3D"color:rgb(0,0,0)"><span style=
+=3D"font-family:&quot;Times New Roman&quot;,Times,serif; font-size:14pt">**=
+* This is an automated response; please do not reply to
+ this email. ***&nbsp;</span> </font></span></p>
+</div>
+</body>
+</html>
+
+--_000_540aa1c8ff884a059b45104d1c0cea19BY3PR09MB7617namprd09pr_--
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>26124</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1721325023</integer>
+	<key>flags</key>
+	<integer>8590195713</integer>
+	<key>remote-id</key>
+	<string>246677</string>
+</dict>
+</plist>

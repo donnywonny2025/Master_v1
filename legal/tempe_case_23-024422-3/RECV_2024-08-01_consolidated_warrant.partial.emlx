@@ -1,0 +1,121 @@
+6497      
+Return-path: <bT.koz1p3g1ig948l5=f8gqnvbeuapz=sv5ykb1wznrng6@em538940.tempe.gov>
+Original-recipient: rfc822;colour8k@mac.com
+Received: from p00-icloudmta-smtpin-us-west-3a-60-percent-22 by p118-mailgateway-smtp-ff486999d-qkmfr (mailgateway 2421B53)
+	with SMTP id 2256ff04-245f-4910-8868-f6be5610f523 
+	for <colour8k@mac.com>; Thu, 1 Aug 2024 18:53:07 GMT
+X-Apple-MoveToFolder: INBOX 
+X-Apple-Action: MOVE_TO_FOLDER/INBOX
+X-Apple-UUID: 2256ff04-245f-4910-8868-f6be5610f523
+Received: from a2i705.smtp2go.com (a2i705.smtp2go.com [103.47.206.193])
+	by p00-icloudmta-smtpin-us-west-3a-60-percent-22.localdomain (Postfix) with ESMTPS id E27B6C000B0
+	for <colour8k@mac.com>; Thu,  1 Aug 2024 18:53:05 +0000 (UTC)
+X-ICL-Info: GAtbRFYDBVFFSlVFSwQEQgYMWxkXXlNCBhAWSkkABUxBTkhFSAYYU0xKRhIcDVQ2WxIJDUlABQVEEAFOTAhaV0gfXhAJXkAAEAwHBwINRRRAAA0VSUdMDAcXAUE4VVtXRkFfQ0geQgcYCQNZH19AQhMdWwMdXUYHWx4JAVhCVV82Nio4LWIOKTU0JzRWc3kvVREDGxcNV1AcTlZCVkNbFgVLARhWU1kPVQkSBUVRBAtCSVNZC11CEkceCVkbX1tCER1bBBVERgEaCxZZG19bQhEdWwMdXUYHWx4JAVhdXwZIRSNGC2pXFEJUIBkpZwYKJQogOCAdUDEMAyYaHUNFAxIcSx4cHkUPAQkFGApAGAEaFFg=
+X-ICL-Score: 3.3330332342
+Authentication-Results: bimi.icloud.com; bimi=none
+X-ARC-Info: policy=fail; arc=none
+Authentication-Results: arc.icloud.com; arc=none
+Authentication-Results: dmarc.icloud.com; dmarc=pass header.from=tempe.gov
+X-DMARC-Info: pass=pass; dmarc-policy=reject; s=r1; d=r1; pdomain=tempe.gov
+X-DMARC-Policy: v=DMARC1; p=reject; rua=mailto:b3648ca8787e083@rep.dmarcanalyzer.com; ruf=mailto:b3648ca8787e083@for.dmarcanalyzer.com; fo=1;
+Authentication-Results: dkim-verifier.icloud.com;
+	dkim=pass (2048-bit key) header.d=smtpcorp.com header.i=@smtpcorp.com header.b=G3/dgBhK
+Authentication-Results: dkim-verifier.icloud.com;
+	dkim=pass (2048-bit key) header.d=tempe.gov header.i=@tempe.gov header.b=b5+BYegr
+Authentication-Results: spf.icloud.com; spf=pass (spf.icloud.com: domain of bT.koz1p3g1ig948l5=f8gqnvbeuapz=sv5ykb1wznrng6@em538940.tempe.gov designates 103.47.206.193 as permitted sender) smtp.mailfrom="bT.koz1p3g1ig948l5=f8gqnvbeuapz=sv5ykb1wznrng6@em538940.tempe.gov"
+Received-SPF: pass (spf.icloud.com: domain of bT.koz1p3g1ig948l5=f8gqnvbeuapz=sv5ykb1wznrng6@em538940.tempe.gov designates 103.47.206.193 as permitted sender) receiver=spf.icloud.com; client-ip=103.47.206.193; helo=a2i705.smtp2go.com; envelope-from="bT.koz1p3g1ig948l5=f8gqnvbeuapz=sv5ykb1wznrng6@em538940.tempe.gov"
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=smtpcorp.com; s=a1-4; h=Feedback-ID:X-Smtpcorp-Track:Message-Id:Subject:
+	Date:To:From:Reply-To:Sender:List-Unsubscribe:List-Unsubscribe-Post;
+	bh=IDDPDUO3Uiz8mRzgs0SrtXDNGcvVEUedy9ilZY5hNHc=; b=G3/dgBhKOSEol1saYrbk09jvWT
+	WNOybarpxKBU71FkjbFo9WoHOD84v80V82MNq0hkx2tI0wMcl8+aOmLoh7Uu+3pIGr2l7JU+6jSmN
+	1Pa9Od0/tLLPEb/LM5OCr2DZL8aNqAZ4cVGhlzkUghtiieQi6iJj6rrzAKSHmtlQ2AXw534cwlBEe
+	tHfnaYqWzkK+p8Szx26ZFChiYEb6tyelpACtNw527g1Ev8kbTILIA4HW8USVW7gbAtIwNYBZlGVlr
+	SOQTtSDRGnBSSPNx/7kxzfzh+v+LqJrN4SHzubq/A4McrY1ylUzhIhD3j79Yicb58bkDF7ueU7e5x
+	KmGx2Hpw==;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=tempe.gov;
+ i=@tempe.gov; q=dns/txt; s=s538940; t=1722538383; h=from : subject :
+ to : message-id : date;
+ bh=IDDPDUO3Uiz8mRzgs0SrtXDNGcvVEUedy9ilZY5hNHc=;
+ b=b5+BYegrrevqnKAyUZgzpogooddx/B3Rxuk3ywJaaY+kgR8FE0yMto47eQO3FXBRMwrka
+ IQLoVp477HivP3+FYbzW4UnaTXjvUWkw3T3Qfh7gaWPtkNeRbLncUfKgIhodKpIWlbtRLe8
+ pdy1iIR9hDjY1tEjkWaLIOkTxO4oziGEPkGGVS5acM/NMNoW4E0EjHic9i3SP1s1GLFvRgt
+ KaLmYUAHVRKMGgX7k7EtmVexOGodw0cuSPc7F5QMwCIO6aw8Ykbauj2PBuEUelC4EfrWxYP
+ 9nllzP5lxhvywomeUrsiUo29lWsq7+5ldw9FvwNr+9CojpnutHD7PH/b7tdw==
+Received: from [10.45.56.87] (helo=SmtpCorp) by smtpcorp.com with esmtpsa
+ (TLS1.3:ECDHE_SECP256R1__RSA_PSS_RSAE_SHA256__AES_256_GCM:256)
+ (Exim 4.94.2-S2G) (envelope-from <noreply@tempe.gov>)
+ id 1sZav9-piOtPi-4q
+ for COLOUR8K@MAC.COM; Thu, 01 Aug 2024 18:53:03 +0000
+Received: from [10.124.239.72] (helo=PC60553) by smtpcorp.com with esmtps
+ (TLS1.2:ECDHE_X25519__RSA_PSS_RSAE_SHA256__AES_256_GCM:256)
+ (Exim 4.97.1-S2G) (envelope-from <noreply@tempe.gov>)
+ id 1sZav7-FnQW0hPsFOX-fSyz for COLOUR8K@MAC.COM;
+ Thu, 01 Aug 2024 18:53:02 +0000
+MIME-Version: 1.0
+From: noreply@tempe.gov
+To: COLOUR8K@MAC.COM
+Date: 1 Aug 2024 11:53:01 -0700
+Subject: KERR, 23-024422-3, CONSOLIDATED WARRANT
+Content-Type: multipart/mixed;
+ boundary=--boundary_28_4e51afc5-4afa-4830-accd-a724108c364c
+Message-Id: <E1sZav7-FnQW0hPsFOX-fSyz@message-id.smtpcorp.com>
+X-Smtpcorp-Track: csEn1fy-Um79.IR1GxltW2hcY.YLVaWAJVKRr
+Feedback-ID: 538940m:538940aMHl4x9:538940sW2WdTYstC
+X-Report-Abuse: Please forward a copy of this message, including all headers,
+ to <abuse-report@smtp2go.com>
+X-CLX-Shades: None
+X-MANTSH: 1TFkXGRkRCllEF2BaWxtnZUFCGFxQEQpZTRdkRURPEQpZSRcacRoQGncGGBpxGRs
+ QGxN3BhsZBhoRClleF2NueREKQ04XRGdeQR59Z2h6QUVYREt6WBJpbG5vG00ZUkR8eh1NYk8RC
+ lhcFxkEGgQfGgUbGB0EGgQaBBsQGx4aHxoRCl5ZF04ech5eEQpNXBcHHx0RCkxaF2htTU1rEQp
+ MRhdNaxEKQ1oXGxoZBB4dBBgaHAQbExkRCkJeFxsRCkJFF2MaWUVwYHNLWwUFEQpCThdmQlhJf
+ kNtGhx9bREKQkwXYxpZRXBgc0tbBQURCkJsF2MaWUVwYHNLWwUFEQpCQBdtSGhBGkFiHXtLHRE
+ KQlgXbXhSWExmQAFcZEcRCkJ4F2t6SX0eRmJjR2QcEQpNXhcbEQpwaBdpWUNdQVgSaUZufBAZG
+ hEKcGgXaFNraXhERkhESBIQGRoRCnBoF2R/HkgZEgFAW0USEBkaEQpwaBdlTG4bZWRdREgBGBA
+ ZGhEKcGgXYV4TbmhnUx14TlgQGRoRCnB/F2V6Hk5GG3J5Z3BkEAcbEhEKcF8XZmtITBNyY3JnS
+ 20QGRoRCnB9F2lFax9aaV9cQXxNEBkaEQpwXxdvYxxmGnhETRNHbRAZGhEKcH0XaUBAbhpJfX9
+ DbkwQGRoRCnBrF2N7Y1tQeVoTT0x8EBkaEQpwSxdtWUUBfhsYGGlsSxAZGhEKbX4XGxEKWE0XS
+ xE=
+X-Proofpoint-GUID: nMtk4WMBPkornaPr8CFDE1g3xnVP7gHe
+X-Proofpoint-ORIG-GUID: nMtk4WMBPkornaPr8CFDE1g3xnVP7gHe
+
+
+----boundary_28_4e51afc5-4afa-4830-accd-a724108c364c
+Content-Transfer-Encoding: base64
+Content-Type: text/plain;
+	charset=utf-8
+
+U2VlIHRoZSBBdHRhY2hlZCBGb3JtDQoNClRoaXMgaXMgYW4gYXV0b21hdGVkIG1lc3Nh
+Z2U7IHBsZWFzZSBkbyBub3QgcmVwbHkgdG8gdGhpcyBlbWFpbC4NCg0KQ2FzZSBpbmZv
+IGlzIGF2YWlsYWJsZSBvbmxpbmUgYXQg4oCTIGh0dHBzOi8vY291cnRjYXNlaW5mby50
+ZW1wZS5nb3YvIC0gZnV0dXJlIGNvdXJ0IGRhdGVzLCByZXZpZXcgY2FzZSBpbmZvcm1h
+dGlvbiwgcmV2aWV3IGZpbmFuY2lhbCBpbmZvcm1hdGlvbiwgY2hlY2sgc3RhdHVzIG9m
+IG1vdGlvbnMuDQoNCkNvbnRhY3QgdGhlIENvdXJ0IHdpdGggcXVlc3Rpb25zIGFuZC9v
+ciB0byBwcm92aWRlIHVwZGF0ZWQgY29udGFjdCBpbmZvIC0gaHR0cHM6Ly93d3cudGVt
+cGUuZ292L2dvdmVybm1lbnQvY2l0eS1jb3VydC9jb250YWN0LXVzDQoNClRlbXBlIE11
+bmljaXBhbCBDb3VydA0K
+----boundary_28_4e51afc5-4afa-4830-accd-a724108c364c
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment
+Content-Type: application/pdf;
+	name=CONSWARR.pdf
+X-Apple-Content-Length: 31975
+
+
+----boundary_28_4e51afc5-4afa-4830-accd-a724108c364c--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>82941</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1722538387</integer>
+	<key>flags</key>
+	<integer>8590132225</integer>
+	<key>remote-id</key>
+	<string>247203</string>
+</dict>
+</plist>

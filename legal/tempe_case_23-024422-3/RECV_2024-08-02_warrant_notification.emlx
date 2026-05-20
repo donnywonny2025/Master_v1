@@ -1,0 +1,72 @@
+4289      
+Return-path: <bounce+2415f9.4ba953-COLOUR8K=mac.com@mgi2.paymentus.com>
+Original-recipient: rfc822;colour8k@mac.com
+Received: from p00-icloudmta-smtpin-us-west-2a-100-percent-18 by p118-mailgateway-smtp-ff486999d-nzlkb (mailgateway 2421B53)
+	with SMTP id f2e16be1-45a7-4cf4-ba35-303a74882194 
+	for <colour8k@mac.com>; Fri, 2 Aug 2024 15:13:23 GMT
+X-Apple-MoveToFolder: INBOX 
+X-Apple-Action: MOVE_TO_FOLDER/INBOX
+X-Apple-UUID: f2e16be1-45a7-4cf4-ba35-303a74882194
+Received: from mg-231-205.paymentus.com (mg-231-205.paymentus.com [159.135.231.205])
+	by p00-icloudmta-smtpin-us-west-2a-100-percent-18.localdomain (Postfix) with ESMTPS id 6A59FC000CF
+	for <colour8k@mac.com>; Fri,  2 Aug 2024 15:13:20 +0000 (UTC)
+X-ICL-Info: GAtbRFYDBVFFSlVFSwQEQgYMWxkXXlNCBhAWSkkFD0xESlNZSgMHTEdJU1cdVAsAGgwIFB0bBFZETABOVgRUA0xMVVo7f3otICtePEVdVwFbGgkaOF1RC0dXFhYBXVMMAQwVWRtfW0ITHVsHGUlbBxsNEwRWU1kPVQsFSjt/ei0gK148OF1XAVsaCRpYWFMOGkQLEFUCBVNYS1ZCVkBXGxgcCAMNQxgBGhRGBwxCCw8SVFRESR0EUkBXFhYBXVMMAQwVWRtfW0IRHVsaH1kETAUYHxodXkIXBlcFGBUQWwsRRFpFSwcBWkdMVE5WCQdXW0hRRUoGB1NAQFBPTwYYKBQPBzoZWVpMFAkWAgtCRiIXHEsWSgAI
+X-ICL-Score: 3.3330332342
+Authentication-Results: bimi.icloud.com; bimi=skipped reason="insufficient dmarc"
+X-ARC-Info: policy=fail; arc=none
+Authentication-Results: arc.icloud.com; arc=none
+Authentication-Results: dmarc.icloud.com; dmarc=pass header.from=paymentus.com
+X-DMARC-Info: pass=pass; dmarc-policy=none; s=r1; d=r1; pdomain=paymentus.com
+X-DMARC-Policy: v=DMARC1; p=none; rua=mailto:dmarc@paymentus.com,mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com;
+Authentication-Results: dkim-verifier.icloud.com;
+	dkim=pass (1024-bit key) header.d=mgi2.paymentus.com header.i=@mgi2.paymentus.com header.b=YLlNlJwG
+Authentication-Results: spf.icloud.com; spf=pass (spf.icloud.com: domain of bounce+2415f9.4ba953-COLOUR8K=mac.com@mgi2.paymentus.com designates 159.135.231.205 as permitted sender) smtp.mailfrom="bounce+2415f9.4ba953-COLOUR8K=mac.com@mgi2.paymentus.com"
+Received-SPF: pass (spf.icloud.com: domain of bounce+2415f9.4ba953-COLOUR8K=mac.com@mgi2.paymentus.com designates 159.135.231.205 as permitted sender) receiver=spf.icloud.com; client-ip=159.135.231.205; helo=mg-231-205.paymentus.com; envelope-from="bounce+2415f9.4ba953-COLOUR8K=mac.com@mgi2.paymentus.com"
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mgi2.paymentus.com; q=dns/txt; s=mx; t=1722611600; x=1722618800;
+ h=Content-Type: Content-Transfer-Encoding: Reply-To: Sender: Sender: Message-ID: To: To: From: From: Subject: Subject: Mime-Version: Date;
+ bh=T+rQD2mWtLG+fxYgBF2nMbmij2Asm7DhQqvQm8rNp9k=;
+ b=YLlNlJwGXxRl5f+x2PXZyC9/iFqMmQMo8mN98P6MwdRl7rjcLg94knKKOoFFvan1HWaBOW6CToMQUH5FZp6mxQe1fe3XXzHCUh7Pb5VeNNWwByMen3Xy3IC1PXEqcrhWPbqdwRLHBRznyiCLXdp/ZaBOldfkGOvoIUO6VbVqTWg=
+X-Mailgun-Sending-Ip: 159.135.231.205
+X-Mailgun-Sid: WyIxZjIxYyIsImNvbG91cjhrQG1hYy5jb20iLCI0YmE5NTMiXQ==
+Received: from <unknown> (<unknown> []) by 23c118d6272a with HTTP id
+ 66acf78db9580b571ed0389f; Fri, 02 Aug 2024 15:13:17 GMT
+Date: Fri, 02 Aug 2024 15:13:17 +0000
+Mime-Version: 1.0
+Subject: Tempe Municipal Court - Warrant
+From: notifications@paymentus.com
+To: COLOUR8K@mac.com
+Message-ID: <237782529.915.1722611596876.JavaMail.appusrp@be-a20>
+Sender: notifications@paymentus.com
+Reply-To: notifications@paymentus.com
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset=ascii
+X-CLX-Shades: None
+X-MANTSH: 1TFkXGBIRCllEF24dZm1meBtAbV9jEQpZTRdkRURPEQpZSRcacRoQGncGEnESGhA
+ cHXcGGBoGGhEKWV4XbGx5EQpDThcfU3N6aW8fU0kSUENtYkZbfH1DW1BBaEl6a016fR4eXhEKW
+ FwXGQQaBB8aBRsaBBscEwQbGRwEGRsQGx4aHxoRCl5ZF04eWl1eEQpNXBcZHxEKTFoXaWhtTU1
+ NEQpMRhdNaxEKQ1oXGx8TBBsZHwQYGRsEGBofEQpCXhcbEQpCXBcbEQpeThcbEQpCSxdoWlJyS
+ WNcXG8dYxEKQkkXaFpSckljXFxvHWMRCkJFF2hEHxhTW1JheXAYEQpCThdoWlJySWNcXG8dYxE
+ KQkwXaEQfGFNbUmF5cBgRCkJsF2hEHxhTW1JheXAYEQpCQBdjZEhOfxMdTWVkXREKQlgXbXhSW
+ ExmQAFcZEcRCkJ4F2t6SX0eRmJjR2QcEQpNXhcbEQpwaBdscHlIEkdrRk9THBAaEQpwaBdlQ3x
+ zXl1SY2MaThAaEQpwaBdtZnhCH2NpYF1vRRAaEQptfhcbEQpYTRdLEQ==
+X-Proofpoint-GUID: 5yYPCE5yc8ziGHlqVWiqzkBcPAgPW44t
+X-Proofpoint-ORIG-GUID: 5yYPCE5yc8ziGHlqVWiqzkBcPAgPW44t
+
+<p>
+	NOTICE: A warrant has been issued for your arrest on case 23-024422-3. For additional information visit the Court&#39;s website at https://www.tempe.gov/court .</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversation-id</key>
+	<integer>82970</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1722611603</integer>
+	<key>flags</key>
+	<integer>8590195713</integer>
+	<key>remote-id</key>
+	<string>247232</string>
+</dict>
+</plist>

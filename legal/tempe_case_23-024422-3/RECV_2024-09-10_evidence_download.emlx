@@ -1,0 +1,393 @@
+17860     
+Return-path: <noreply@evidence.com>
+Original-recipient: rfc822;colour8k@mac.com
+Received: from p00-icloudmta-smtpin-us-central-1n-10-percent-3 by p118-mailgateway-smtp-5c64446bbd-pzhpv (mailgateway 2424B107)
+	with SMTP id 7d06cacd-c337-42d9-b54d-9a4f6eb7b553 
+	for <colour8k@mac.com>; Tue, 10 Sep 2024 21:00:12 GMT
+X-Apple-MoveToFolder: INBOX 
+X-Apple-Action: MOVE_TO_FOLDER/INBOX
+X-Apple-UUID: 7d06cacd-c337-42d9-b54d-9a4f6eb7b553
+Received: from us1ge1-3.evidence.com (us1ge1-3.evidence.com [52.227.180.79])
+	by p00-icloudmta-smtpin-us-central-1n-10-percent-3.p00-icloudmta-smtpin-vip.icloud-mail-production.svc.kube.us-central-1n.k8s.cloud.apple.com (Postfix) with ESMTPS id A64D6C04AA1
+	for <colour8k@mac.com>; Tue, 10 Sep 2024 21:00:08 +0000 (UTC)
+X-ICL-Info: GAtbRFYDBVFFSlVFSwQEQgYMWxkXXlNCBhAWSk0CGFBHTkhGQAAYVUxZAxNFXlkQEAkKDjhVQAsRHAgUHR5VDRhZABNFVUALERwIFB0eVQ0YWRQURXNZDhoMFE8TcFsDFlcFGBUQXgcZFlsCCwFRB0RUVVkdRl8GEBcFElZTWQ9VCRIFRUVFUxIcV1pLHlMUHB0DGRtVGAEaFEYTHA1TFBwdAxkbVRgBGhRGGhFUC15GSVdASAkBU0RXVUBPAwBUQldXQEoGBlJHSVZCTQkETD8YEBY1UV8OWwsJGAxwTAsFCR9aD19ECRALSxMdQFoNDFRRT0FTAwEXTgQTVUhbABYXWA==
+X-ICL-Score: 3.3330332342
+Authentication-Results: bimi.icloud.com; bimi=skipped reason="insufficient dmarc"
+X-ARC-Info: policy=fail; arc=none
+Authentication-Results: arc.icloud.com; arc=none
+Authentication-Results: dmarc.icloud.com; dmarc=pass header.from=evidence.com
+X-DMARC-Policy: v=DMARC1; p=none; fo=1; rua=mailto:dmarc_rua@emaildefense.proofpoint.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com
+X-DMARC-Info: pass=pass; dmarc-policy=none; s=r1; d=r1; pdomain=evidence.com
+Authentication-Results: dkim-verifier.icloud.com;
+	dkim=pass (1024-bit key) header.d=evidence.com header.i=@evidence.com header.b=InraHMsG
+Authentication-Results: spf.icloud.com; spf=pass (spf.icloud.com: domain of noreply@evidence.com designates 52.227.180.79 as permitted sender) smtp.mailfrom=noreply@evidence.com
+Received-SPF: pass (spf.icloud.com: domain of noreply@evidence.com designates 52.227.180.79 as permitted sender) receiver=spf.icloud.com; client-ip=52.227.180.79; helo=us1ge1-3.evidence.com; envelope-from=noreply@evidence.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=evidence.com;
+ i=@evidence.com; q=dns/txt; s=dk-2020-01; t=1726002005; h=from : to :
+ message-id : subject : mime-version : content-type : from;
+ bh=Z82nKeaHsQkrYiqo63aKch9x65rAIoPrxEqTN7aIIRE=;
+ b=InraHMsGRN05RMLUg20JbApWvhbIJd+qZhwnko/CaQvCHN0yf4HqeKCzuvvOaadR02EX+
+ IVd5J8UE9ZFxI/MBgeVRgScjrJA6/kw00tXMK7hvCZrKIZeJz3d26EJqQvQlsBgkGyfuSav
+ CjobLkr6LdIVSUbOMVIlQ0HqBS4jK9I=
+Date: Tue, 10 Sep 2024 21:00:05 +0000 (UTC)
+From: Axon <noreply@evidence.com>
+To: Colour8k@mac.com
+Message-ID: <301709711.3773667.1726002005592.JavaMail.root@zippy-worker-deploy-789c5cb7bd-xmbcn>
+Subject: Evidence.com - Evidence Download Link
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_3773666_1506882339.1726002005592"
+X-AXON-CXID: b1977a8b-9667-45ab-b8a8-79524a1f237f
+X-CLX-Shades: None
+X-MANTSH: 1TFkXGxsdEQpZRBdsTUBneQFffUlvQhEKWU0XZEVETxEKWUkXGnEaEBp3BhMdcRw
+ fEBx3BhgaBhoRClleF2xseREKQ04XZnpGWVlZQmNJeVoaY0R/Uh1zEnxPGEZ1QW5FEmVNH2MRC
+ lhcFxkEGgQfGgUbGgQbHBgEGRoEHhAbHhofGhEKXlkXT2xGTBsRCk1cFxkfGBEKTFoXaWtpTU1
+ NEQpMRhdNaxEKQ1oXHxgEGBgdBBsSGgQdExEKQl4XGxEKQlwXGxEKXk4XGxEKQksXZU1LSUtde
+ WlPHk8RCkJJF2VNS0lLXXlpTx5PEQpCRRdvX0hMUx4ZXH5dUhEKQk4XZU1LSUtdeWlPHk8RCkJ
+ MF2hzcmh6UH5YWllyEQpCbBduTEVIGRkeHmROeREKQkAXaQUceXh4E2NFcx8RCkJYF214UlhMZ
+ kABXGRHEQpCeBdrekl9HkZiY0dkHBEKcGcXbBtZR2lkTkVFTxkQHBoRCnBoF2RTG2NAYlAYQ2Y
+ FEB4SEQpwaBdrHFkFb0sYY19/TxAeEhEKcGgXa1JPG2JJG1kaTBIQHhIRCnBoF2BAT21PARtBW
+ W9gEB4SEQpwaBdsY0ZIa2J9HVNHWRAeEhEKcGgXbnNschJQTV1tbRoQHhIRCnBoF2hbHEwffER
+ jAR4eEB4SEQpwaBdmfUJoSWtwcF5iARAeEhEKcH8XY21NXntpcElyG2QQEh8RCnBfF2x6QRhGf
+ htLEm1OEBoRCnB9F2xSGBhveUFyHnB7EBoRCnBfF29sXFp4fUATbm1oEBoRCnB9F2hafB99Rn5
+ ofEVMEBoRCnBsF2BsQG5kZEdOQ1wFEBwaEQptfhcaEQpYTRdLEQ==
+X-Authority-Info: v=2.4 cv=J7T47xnS c=1 sm=1 tr=0 ts=66e0b35a cx=c_pps a=Jfkl3YhHfYvbm7freX0qdA==:117 a=Jfkl3YhHfYvbm7freX0qdA==:17 a=4vU-cDAtAAAA:8 a=EaEq8P2WXUwA:10 a=2Zd0wkXd2TYA:10 a=g8TUdU_LZmEA:10 a=IoeQSOh0AAAA:8 a=LHJ_gtnP7MrWsj_9YToA:9 a=daHBniUwkhZ71GXY:21 a=frz4AuCg-hUA:10 a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=8ktGmjim-1dbApmCxkqe:22 a=zHLE2jnfhNzAW3bdPdKa:22
+X-Proofpoint-GUID: LPlssshIcSp0InUx7Y8Ve2l_kDo8Og5I
+X-Proofpoint-ORIG-GUID: LPlssshIcSp0InUx7Y8Ve2l_kDo8Og5I
+
+------=_Part_3773666_1506882339.1726002005592
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Axon - Tempe City (AZ) Attorney's Office</title>
+  </head>
+  <body class="darkmode body" style="color: black; background: white; font-family: sans-serif; margin: 0; font-size: 14px; line-height: 20px; font-smooth: always; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+
+    <!--[if mso]>
+    <style type="text/css">
+      body, table, td { font-family: sans-serif !important; }
+
+      .header { background-image: linear-gradient(#111, #111); }
+    </style>
+    <![endif]-->
+    <!--[if (gte mso 17)|(IE)]><!-->
+    <style type="text/css">
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        mso-font-alt: 'Arial';
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      body, .body, table {
+        font-family: 'Roboto', sans-serif !important;
+      }
+    </style>
+    <!--<![endif]-->
+    <style type="text/css">
+      a { color: #045dd2; word-break: break-all; }
+
+      p { line-height: 1.7; }
+
+      .headline > a { color: inherit !important; text-decoration: none !important; }
+
+      table {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        border-collapse: collapse;
+      }
+
+      .body {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+      }
+
+      .ReadMsgBody {
+          width: 100%;
+      }
+
+      .ExternalClass {
+          display: block !important;
+          width: 100%;
+      }
+
+      /* Force Hotmail to display emails at full width */
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+          line-height: 100%;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        a { color: #64b0fc; }
+
+        .darkmode { background-color: #111111 !important; color: #ffffff !important; }
+
+        .heading { color: #ffd700 !important; }
+
+        .headline { border-left-color: #ffffff !important; }
+
+        .link { color: #91ADD4 !important; }
+
+        .security-notice { border-top: 1px solid #5C5C5C !important; color: #C7C7C7 !important; }
+      }
+
+      /* Outlook dark mode styles */
+      [data-ogsc] a { color: #64b0fc; }
+
+      [data-ogsc] .darkmode { background-color: #111111 !important; color: #ffffff !important; }
+
+      [data-ogsc] .heading { color: #ffd700 !important; }
+
+      [data-ogsc] .headline { border-left-color: #ffffff !important; }
+
+      [data-ogsc] .link { color: #91ADD4 !important; }
+
+      [data-ogsc] .security-notice { border-top: 1px solid #5C5C5C !important; color: #C7C7C7 !important; }
+
+      @media only screen and (max-width: 648px) {
+        .content { width: 480px !important; }
+
+        .headerrow { height: auto !important; }
+      }
+      @media only screen and (max-width: 528px) {
+        .content { width: 400px !important; }
+      }
+      @media only screen and (max-width: 448px) {
+        .content { width: 320px !important; }
+      }
+    </style>
+    <table style="width: 100%; border-collapse: collapse; table-layout: fixed;" class="darkmode" role="presentation">
+      <tr class="header">
+        <td width="24" style="width: 24px;"></td>
+        <td align="center">
+          <table class="content" valign="middle" cellspacing="0" cellpadding="0" border="0" style="width: 600px; table-layout: fixed;" role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr class="headerrow">
+              <td width="48" valign="middle" style="font-size: 24px; line-height: 32px;">
+                <table width="32" style="border-collapse: collapse;" role="presentation">
+                  <tr>
+                    <td style="font-size: 14px;">
+                      <img src="https://TempeAZAttorneysOffice.evidence.com/images/axon-delta-white-bg.png" alt="" width="32" height="32" style="display: block; margin-right: 16px;" />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td align="left" valign="middle" style="font-size: 16px; line-height: 24px; padding: 16px 0; font-weight: bold;" class="agency-name">
+                <table style="table-layout: fixed;" cellspacing="0" cellpadding="0" border="0" style="table-layout: fixed; overflow-wrap: break-word; word-wrap: break-word; -ms-word-break: break-all; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;" role="presentation">
+                  <tr>
+                    <td style="border-left: 1px solid #111; padding-left: 24px; font-weight: bold;" class="headline">
+                      Axon - Tempe City (AZ) Attorney's Office
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td width="24" style="width: 24px;"></td>
+      </tr>
+      <tr>
+        <td width="24" style="width: 24px;"></td>
+        <td align="center">
+          <table class="content darkmode" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 600px; padding: 0 36px; table-layout: fixed; overflow-wrap: break-word; word-wrap: break-word; -ms-word-break: break-all; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;" role="presentation">
+            <tr height="48"></tr>
+            <tr>
+              <td>
+                <h1 class="heading" style="font-size: 24px; line-height: 28px; font-weight: bold; margin-top: 0; margin-bottom: 0; color: black;">Evidence.com - Evidence Download Link&#10;</h1>
+              </td>
+            </tr>
+            <tr height="24"></tr>
+            <tr>
+              <td>
+                <div class="content" style="width: 600px; text-align: left; word-wrap: break-word; -ms-word-break: break-all; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;">
+
+
+
+<b>Sabrina Boggs</b> (Badge ID: <b>25772</b>) from <b>Tempe City (AZ) Attorney&#39;s Office</b> (https://TempeAZAttorneysOffice.evidence.com) has sent you a link to download evidence on Evidence.com. After clicking on the link below you will download <b>1</b> zip or iso files containing the requested evidence. This download may take a while depending on your internet connection.<br/><br/>BWC &amp; Photos Re; Jeffrey Kerr
+Case no: 23-024422-3
+IR: 23-104984<br/><br/><b>Please note that your access to this link will expire on December 9, 2024 13:57:25 (-07:00).</b><br/>Afterwards, you will need to contact the sender to request access.<br/><br/>Download link:<br/><a href="https://TempeAZAttorneysOffice.evidence.com/axon/download/b9755ea3b4b54105b7721d47dac410ae/8f9b7d121b3548deb66e4cfdebd1a66b?token&#61;ctQ9AWhJgSzo2WdKzNjbEZYMIDKf40DG7VNVa0Wyx7ZgVkbTpwkm5gJqFar2Sr1RiaNPl8KU4TvhYONWbVwVcyptd4z%2BI%2FmH9quMKsGsTHBxDCEtp8aokskzRfYJT9cN190spFmA4XeZ%2B6vhjuaFM9I9zRQmsVlYpScAGe%2Bjy76RyCddjlYJ8AVESlMakw4A1wyvRynPwpv5qX1PlhgcgS88paY2g3NhvXzmOXg%2FHtQ%3D&amp;version&#61;1">[Click here to download]</a><br/>
+
+                </div>
+              </td>
+            </tr>
+            <tr height="16"></tr>
+            <tr>
+              <td>
+                Thank you, <br/>The Axon Team
+              </td>
+            </tr>
+            <tr height="48"></tr>
+            <tr>
+              <td class="security-notice" style="border-top: 1px solid #A8A8A8; padding-top: 16px; font-size: 10px; line-height: 12px; color: #5C5C5C; word-break: normal;">
+                SECURITY NOTICE: Axon will not send you emails that request your username, password, security questions, or any other sensitive information. If you receive an email requesting information, it is most likely an attempt to gain access to your account. Furthermore, please verify that any hyperlinks in the message above begin with the proper URL e.g. "https://agencyname.evidence.com". Please forward emails that appear suspicious to help@evidence.com.
+              </td>
+            </tr>
+            <tr height="48"></tr>
+          </table>
+        </td>
+        <td width="24" style="width: 24px;"></td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+------=_Part_3773666_1506882339.1726002005592--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>conversation-id</key>
+	<integer>81723</integer>
+	<key>date-last-viewed</key>
+	<integer>0</integer>
+	<key>date-received</key>
+	<integer>1726002012</integer>
+	<key>flags</key>
+	<integer>8590195840</integer>
+	<key>remote-id</key>
+	<string>248479</string>
+</dict>
+</plist>

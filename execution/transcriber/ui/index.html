@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Notes — Master Transcriber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar: Session History -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Sessions</span>
+        <button class="sidebar-new-btn" id="new-session-btn" title="New Recording">＋</button>
+      </div>
+      <div class="sidebar-list" id="session-list">
+        <div class="sidebar-empty">No recordings yet</div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Sessions">☰</button>
+          <div class="logo">
+            <span class="logo-icon">◉</span>
+            <span class="logo-text">TRANSCRIBER</span>
+          </div>
+          <span class="header-divider">·</span>
+          <span class="header-status" id="status">Standby</span>
+        </div>
+        <div class="header-right">
+          <span class="header-timer" id="timer">0:00</span>
+          <span class="header-dot" id="status-dot"></span>
+        </div>
+      </header>
+
+      <!-- Controls -->
+      <div class="controls" id="controls">
+        <div class="control-row">
+          <input type="text" id="meeting-label" class="meeting-input" 
+                 placeholder="Meeting name (e.g. CallieBea Probation Zoom)" 
+                 autocomplete="off" spellcheck="false">
+          <button id="record-btn" class="btn btn-record">
+            <span class="btn-icon" id="btn-icon">●</span>
+            <span id="btn-text">Start Recording</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Transcript -->
+      <div class="transcript-area" id="transcript-area">
+        <div class="transcript-empty" id="transcript-empty">
+          <div class="empty-icon">🎙</div>
+          <div class="empty-title">Ready to record</div>
+          <div class="empty-sub">Name your meeting above and hit Start Recording.<br>
+          Make sure Zoom audio is routed through BlackHole.</div>
+        </div>
+        <div class="transcript-lines" id="transcript-lines"></div>
+        <div class="transcript-partial" id="transcript-partial"></div>
+      </div>
+
+      <!-- Viewing Past Transcript (hidden by default) -->
+      <div class="viewer-area" id="viewer-area" style="display:none;">
+        <div class="viewer-header">
+          <button class="viewer-back" id="viewer-back">← Back</button>
+          <span class="viewer-title" id="viewer-title"></span>
+        </div>
+        <div class="viewer-content" id="viewer-content"></div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <span class="footer-model" id="footer-model">—</span>
+        <span class="footer-file" id="footer-file">No active session</span>
+        <span class="footer-count" id="footer-count">0 segments</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
